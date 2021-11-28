@@ -1,26 +1,22 @@
 import { createStackNavigator } from 'react-navigation-stack';
-import Home from '../screens/home';
-import ReviewDetails from '../screens/reviewDetails';
+import About from '../screens/about';
 import Header from '../shared/header';
 import React from 'react';
 import { globalStyles } from '../style/global';
 
 const screens = {
-    "Home": {
-        screen: Home,
+    "About": {
+        screen: About,
         navigationOptions: ({ navigation }) => {
             return {
-                headerTitle: () => <Header title="Game Zone" navigation={navigation} />
+                headerTitle: () => <Header title="About Game Zone" navigation={navigation} />
             }
         }
-    },
-    "Review Details": {
-        screen: ReviewDetails
-    },
+    }
 }
 
-const HomeStack = createStackNavigator(screens, {
+const AboutStack = createStackNavigator(screens, {
     defaultNavigationOptions: globalStyles.defaultNavigationOptions
 })
 
-export default HomeStack;
+export default AboutStack;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import * as Font from 'expo-font';
-import Navigator from './routes/homeStack'
+import Navigator from './routes/drawer'
 import AppLoading from 'expo-app-loading';
 
 const getFonts = () => Font.loadAsync({
@@ -15,12 +15,12 @@ export default function App() {
       <Navigator />
     );
   }
-  else{
-    return(
+  else {
+    return (
       <AppLoading
         startAsync={getFonts}
-        onFinish={()=>setFontLoaded(true)}
-        onError={()=>{ console.warn('Blah Blah Blah') }}
+        onFinish={() => setFontLoaded(true)}
+        onError={() => { console.warn('Blah Blah Blah') }}
       />
     )
   }
