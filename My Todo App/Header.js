@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { styles } from './Styles';
+import { styles } from './style/Global';
 
 export default function Header({title}) {
     return (

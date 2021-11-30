@@ -1,7 +1,6 @@
 import { AsyncStorage } from 'react-native';
 
-export const Storage = {
-
+export const Cache = {
     getItem: async function (key) {
         let item = await AsyncStorage.getItem(key);
         //You'd want to error check for failed JSON parsing...

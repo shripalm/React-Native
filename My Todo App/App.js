@@ -1,7 +1,8 @@
 import React from 'react';
 import { TouchableWithoutFeedback, Keyboard, Text } from 'react-native';
-import Body from './Body';
 import Header from './Header';
+import Add from './screen/Add';
+import Completed from './screen/Completed';
 
 export default function App() {
 
@@ -9,7 +10,7 @@ export default function App() {
     <TouchableWithoutFeedback onPress={() => { Keyboard.dismiss() }}>
       <>
         <Header title="TODO APP" />
-        <Body />
+        <Add />
         <Text style={{
           textAlign: 'justify',
           paddingHorizontal: 30
