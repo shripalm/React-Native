@@ -38,7 +38,9 @@ export default function Add() {
     }
 
     return (
-        <View>
+        <View style={{
+            padding: 20
+        }}>
             <TextInput
                 style={styles.input}
                 onChangeText={setTextValue}

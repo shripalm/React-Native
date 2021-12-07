@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Text, View, TouchableOpacity, TextInput, FlatList, Button } from 'react-native';
+import { Text, View, TouchableOpacity, FlatList } from 'react-native';
 import { styles } from '../style/Global';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Cache } from '../storage/Cache';
 
 
-export default function Completed() {
+export default function Remaining() {
 
   const [todoList, setTodoList] = useState([])
-  const [textValue, setTextValue] = useState('')
   const [set, setter] = useState(0)
 
   function handleComplete(selectedIndex) {
